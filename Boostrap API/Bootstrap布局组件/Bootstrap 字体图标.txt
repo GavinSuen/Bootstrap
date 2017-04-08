@@ -1,0 +1,13 @@
+Bootstrap 字体图标（Glyphicons）
+
+什么事字体图标？
+字体图标是在Web项目中使用的图标字体。虽然，Glyphicons Halflings需要商业许可，但是可以通过基于项目的Bootstrap来免费使用。
+
+获取字体图标
+下载完成Bootstrap后，在fonts文件夹内可以找到字体图标，它包含了下列文件：
+glyphicons-halflings-regular.eot
+glyphicons-halflings-regular.svg
+glyphicons-halflings-regular.ttf
+glyphicons-halflings-regular.woff
+
+
