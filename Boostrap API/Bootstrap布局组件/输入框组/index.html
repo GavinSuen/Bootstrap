@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<title>输入框组</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body style="margin:100px;">
+
+<!-- 
+输入框组扩展自表单控件。使用输入框组，可以很容易的向基于文本的输入框添加作为前缀和后缀的文本或按钮。 
+通过向输入域添加前缀和后缀的内容，可以向用户输入添加公共的元素。例如，添加美元符号，或者在Twitter用户名前添加@，或者应用程序接口所需的其他公共的元素。
+
+向 .form-control 添加前缀或后缀元素的步骤如下：
+	把前缀或后缀元素放在一个带有class .input-group的div中
+	接着，在相同的div内，在class为.input-group-addon的span内放置额外的内容。
+	把该span放置在input元素的前面或后面。
+-->
+
+<form class="">
+	<div class="input-group">
+		<span class="input-group-addon">@</span>
+		<input type="text" class="form-control">
+	</div>
+	<br>
+	<div class="input-group">
+		<input type="text" class="form-control">
+		<span class="input-group-addon">$</span>
+	</div>
+	<br>
+	<div class="input-group">
+		<span class="input-group-addon">前缀</span>
+		<input type="text" class="form-control">
+		<span class="input-group-addon">后缀</span>
+	</div>
+</form>
+<br>
+<!-- 复选框和单选插件 -->
+
+<form action="">
+	<div class="input-group">
+		<span class="input-group-addon"><input type="checkbox"></span>
+		<input type="text" class="form-control" placeholder="请输入">
+	</div>
+	<br>
+	<div class="input-group">
+		<span class="input-group-addon"><input type="radio"></span>
+		<input type="text" class="form-control">
+	</div>
+</form>
+<br>
+
+<!-- 按钮插件 -->
+<form action="">
+	<div class="col-lg-6">
+		<div class="input-group">
+			<span class="input-group-btn"><button class="btn btn-default">Go!</button></span>
+			<input type="text" class="form-control">
+		</div>	
+	</div>
+	<div class="col-lg-6">
+		<div class="input-group">
+			<input type="text" class="form-control">
+			<span class="input-group-btn"><button class="btn btn-default">Go!</button></span>
+		</div>
+	</div>
+</form>
+
+<hr>
+<!-- 带有下拉菜单的按钮 -->
+<form action="">
+	<div class="col-sm-6">
+		<div class="input-group">
+		<div class="input-group-btn">
+			<button class="btn btn-default dropdown-toggle" data-toggle="dropdown">菜单
+				<span class="caret"></span>
+			</button>
+			<ul class="dropdown-menu">
+				<li><a href="#">列表1</a></li>
+				<li><a href="#">列表2</a></li>
+				<li><a href="#">列表3</a></li>
+				<li class="divider"></li>
+				<li><a href="#">列表4</a></li>
+			</ul>
+		</div>
+		<input type="text" class="form-control">
+	</div>
+	</div>
+	<div class="col-sm-6">
+		<div class="input-group">
+			<input type="text" class="form-control">
+			<div class="input-group-btn">
+				<button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">菜单
+					<span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu">
+					<li><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</form>
+
+<hr>
+<hr>
+<!-- 分割的下拉菜单 -->
+<div class="input-group">
+	<div class="input-group-btn">
+		<button class="btn btn-default">下拉菜单
+			<button class="btn btn-default dropdown-toggle" data-toggle="dropdown" >
+				<span class="caret"></span>
+			</button>
+		</button>
+		<ul class="dropdown-menu">
+			<li><a href="#">1</a></li>
+			<li><a href="#">2</a></li>
+		</ul>
+	</div>
+	
+	<input type="text" class="form-control">
+</div>
+
+
+
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+</body>
+</html>

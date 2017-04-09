@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<title>按钮下拉菜单</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body style="margin:100px;">
+
+<div class="btn-group">
+	<button class="btn btn-default dropdown-toggle" data-toggle="dropdown">菜单
+		<span class="caret"></span>
+	</button>
+	<ul class="dropdown-menu">
+		<li><a href="#">列表1</a></li>
+		<li><a href="#">列表2</a></li>
+		<li><a href="#">列表3</a></li>
+		<div class="divider"></div>
+		<li><a href="#">列表4</a></li>
+	</ul>
+</div>
+
+<div class="btn-group">
+	<button class="btn btn-primary">菜单</button>
+	<button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+		<span class="caret"></span>
+		<span class="sr-only">切换菜单</span>
+	</button>
+	<ul class="dropdown-menu" role="menu">
+		<li><a href="#">列表1</a></li>
+		<li><a href="#">列表2</a></li>
+		<li><a href="#">列表3</a></li>
+		<div class="divider"></div>
+		<li><a href="#">列表4</a></li>
+	</ul>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
