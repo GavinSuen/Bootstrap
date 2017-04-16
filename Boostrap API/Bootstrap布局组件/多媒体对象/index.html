@@ -3,61 +3,61 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-	<title>警告</title>
+	<title>多媒体对象</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body style="margin:100px;">
 
-<!-- 警告向用户提供了一种定义消息样式的方式。它们为典型的用户操作提供了上下文信息反馈。
-可以为警告框添加一个可选的关闭按钮。为了创建一个内联的可取消的警告框，需使用jQuery插件。 -->
+<!-- 多媒体对象样式用于创建各种类型的组件（如，博客评论），我们可以在组件中使用图文混排，图像可以左对齐或者右对齐。媒体对象可以用更少的代码来实现媒体对象与文字的混排。 -->
 
-<div class="alert alert-success">成功！很好地完成了提交。</div>
+<!-- media：该class允许将媒体对象的多媒体（图像、视频、音频）浮动到内容区块的左边或者右边。
 
-<div class="alert alert-info">信息！请注意这个信息。</div>
+media-list：如果需要一个列表，各项内容是无序列表的一部分，可以使用该class。用于评论列表与文章列表。 -->
 
-<div class="alert alert-warning">警告！请不要提交。</div>
-
-<div class="alert alert-danger">错误！请进行一些更改。</div>
-
-<br>
-
-<!-- 可取消的警告 -->
-<p>可取消的警告</p>
-
-<div class="alert alert-success">
-	<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-	成功!很好地完成了提交。
+<div class="media">
+	<a href="#" class="pull-left">
+		<img class="meidia-object" src="img/thumbnail_2.jpg" alt="媒体对象">
+	</a>
+	<div class="meidia-body">
+		<h4 class="media-heading">标题</h4>
+		这是一些示例文本。这是一些示例文本。
+        这是一些示例文本。这是一些示例文本。
+        这是一些示例文本。这是一些示例文本。
+        这是一些示例文本。这是一些示例文本。
+        这是一些示例文本。这是一些示例文本。
+	</div>
 </div>
 
-<div class="alert alert-info">
-	<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-	信息！请注意这些信息。
+<br><br>
+
+<div class="media">
+	<a href="#" class="pull-left">
+		<img src="img/thumbnail_2.jpg" alt="" class="meidia-object">
+	</a>
+	<div class="media-body">
+		<h4 class="meidia-heading">标题</h4>
+		这是一些示例文本。这是一些示例文本。
+        这是一些示例文本。这是一些示例文本。
+        这是一些示例文本。这是一些示例文本。
+        这是一些示例文本。这是一些示例文本。
+        这是一些示例文本。这是一些示例文本。
+        <div class="media">
+        	<a href="#" class="pull-left">
+				<img src="img/thumbnail_2.jpg" alt="" class="meidia-object">
+			</a>
+        	<div class="media-body">
+        		<h4 class="media-heading">标题</h4>
+        		这是一些示例文本。这是一些示例文本。
+       			 这是一些示例文本。这是一些示例文本。
+       			 这是一些示例文本。这是一些示例文本。
+    		     这是一些示例文本。这是一些示例文本。
+    		     这是一些示例文本。这是一些示例文本。
+        	</div>
+        </div>
+	</div>
 </div>
 
-<div class="alert alert-warning">
-	<button class="close" type="button" data-dismiss="alert" aria-hidden="true">&times;</button>
-	警告！请不要提交。
-</div>
 
-<div class="alert alert-danger">
-	<button class="close" type="button" data-dismiss="alert" aria-hidden="true">&times;</button>
-	错误！请进行一些更改。
-</div>
-
-<br>
-
-<!-- 警告中的链接 -->
-<p>警告中的链接</p>
-
-<div class="alert alert-success">
-	<button class="close" type="button" data-dismiss="alert">&times;</button>
-	<a href="#" class="alert-link">成功！很好地完成了提交。</a>
-</div>
-
-<div class="alert alert-info">
-	<button class="close" data-dismiss="alert">&times;</button>
-	<a href="#" class="alert-link">信息！请注意这些信息。</a>
-</div>
 
 <script src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>

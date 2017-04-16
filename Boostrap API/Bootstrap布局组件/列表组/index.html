@@ -3,60 +3,41 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-	<title>警告</title>
+	<title>列表组</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body style="margin:100px;">
 
-<!-- 警告向用户提供了一种定义消息样式的方式。它们为典型的用户操作提供了上下文信息反馈。
-可以为警告框添加一个可选的关闭按钮。为了创建一个内联的可取消的警告框，需使用jQuery插件。 -->
-
-<div class="alert alert-success">成功！很好地完成了提交。</div>
-
-<div class="alert alert-info">信息！请注意这个信息。</div>
-
-<div class="alert alert-warning">警告！请不要提交。</div>
-
-<div class="alert alert-danger">错误！请进行一些更改。</div>
+<ul class="list-group">
+	<li class="list-group-item"><span class="badge">新</span>免费注册域名</li>
+	<li class="list-group-item">免费空间托管</li>
+	<li class="list-group-item">图像数量</li>
+	<li class="list-group-item">更新成本</li>
+</ul>
 
 <br>
 
-<!-- 可取消的警告 -->
-<p>可取消的警告</p>
-
-<div class="alert alert-success">
-	<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-	成功!很好地完成了提交。
-</div>
-
-<div class="alert alert-info">
-	<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-	信息！请注意这些信息。
-</div>
-
-<div class="alert alert-warning">
-	<button class="close" type="button" data-dismiss="alert" aria-hidden="true">&times;</button>
-	警告！请不要提交。
-</div>
-
-<div class="alert alert-danger">
-	<button class="close" type="button" data-dismiss="alert" aria-hidden="true">&times;</button>
-	错误！请进行一些更改。
-</div>
+<p>向列表组添加链接</p>
+<a href="#" class="list-group-item active">1</a>
+<a href="#" class="list-group-item">2</a>
+<a href="#" class="list-group-item">3</a>
+<a href="#" class="list-group-item">4</a>
 
 <br>
 
-<!-- 警告中的链接 -->
-<p>警告中的链接</p>
-
-<div class="alert alert-success">
-	<button class="close" type="button" data-dismiss="alert">&times;</button>
-	<a href="#" class="alert-link">成功！很好地完成了提交。</a>
-</div>
-
-<div class="alert alert-info">
-	<button class="close" data-dismiss="alert">&times;</button>
-	<a href="#" class="alert-link">信息！请注意这些信息。</a>
+<p>向列表组添加自定义内容</p>
+<div class="list-group">
+	<a href="#" class="list-group-item">
+		<h4 class="list-group-item-heading">头部标题</h4>
+	</a>
+	<a href="#" class="list-group-item">
+		<h3 class="list-group-item-heading">标题区域</h3>
+		<p class="list-group-item-text">文本内容区域</p>
+	</a>
+	<a href="#" class="list-group-item">3</a>
+	<a href="#" class="list-group-item">
+		乌拉拉
+	</a>
 </div>
 
 <script src="js/jquery.min.js"></script>
