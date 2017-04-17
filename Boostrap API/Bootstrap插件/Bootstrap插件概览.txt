@@ -1,0 +1,21 @@
+Bootstrap插件概览
+
+Bootstrap自带12种jQuery插件，扩展了功能，可以给站点添加更多的互动。利用Bootsrap数据API，大部分的插件可以在不编写任何代码的情况被触发。
+
+站点引用Bootstrap插件的方式有两种：
+	单独引用：使用Bootstrap的个别的*.js文件。一些插件和CSS组件依赖于其他插件。如果单独引用插件，请先确保这些插件之间的依赖关系。
+	编译（同时）引用：使用bootstrap.js或压缩版的bootstrap.min.js
+
+	注：不要尝试同时引用这两个文件，因为bootstrap.js和bootstrap.min.js都包含了所有的插件。
+
+data属性
+可以仅仅通过data属性API就能使用所有的Bootstrap插件，无需写一行JavaScript代码。这是Bootstrap中的一等API，也应该是首选方式。
+话又说回来，在某些情况下可能需要将此功能关闭。因此，我们还提供了关闭data属性API的方法，即解除以data-api为命名空间并绑定在文档上的事件。
+	$(document).off('.data-api')
+如需关闭一个特定的插件，只需在data-api命名空间前加上该插件的名称作为命名空间即可。
+	$(document).off('.alert.data-api')
+
+编程方式的API
+我们为所有Bootstrap插件提供了纯JavaScript方式的API。所有公开的API都是支持单独或链式调用方式，并且返回其所操作的元素集合。
+	$(".btn.danger").button("toggle").addClass("fat")
+

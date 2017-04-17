@@ -3,60 +3,106 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-	<title>警告</title>
+	<title>面板</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body style="margin:100px;">
 
-<!-- 警告向用户提供了一种定义消息样式的方式。它们为典型的用户操作提供了上下文信息反馈。
-可以为警告框添加一个可选的关闭按钮。为了创建一个内联的可取消的警告框，需使用jQuery插件。 -->
+<!-- 面板组件用于把DOM组件插入到一个盒子中。创建一个基本的面板，只需向<div>元素添加class.panel和class.panel-default即可。 -->
 
-<div class="alert alert-success">成功！很好地完成了提交。</div>
-
-<div class="alert alert-info">信息！请注意这个信息。</div>
-
-<div class="alert alert-warning">警告！请不要提交。</div>
-
-<div class="alert alert-danger">错误！请进行一些更改。</div>
-
-<br>
-
-<!-- 可取消的警告 -->
-<p>可取消的警告</p>
-
-<div class="alert alert-success">
-	<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-	成功!很好地完成了提交。
-</div>
-
-<div class="alert alert-info">
-	<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-	信息！请注意这些信息。
-</div>
-
-<div class="alert alert-warning">
-	<button class="close" type="button" data-dismiss="alert" aria-hidden="true">&times;</button>
-	警告！请不要提交。
-</div>
-
-<div class="alert alert-danger">
-	<button class="close" type="button" data-dismiss="alert" aria-hidden="true">&times;</button>
-	错误！请进行一些更改。
+<div class="panel panel-default">
+	<div class="panel-body">
+		这是一个基本的面板
+	</div>
 </div>
 
 <br>
 
-<!-- 警告中的链接 -->
-<p>警告中的链接</p>
-
-<div class="alert alert-success">
-	<button class="close" type="button" data-dismiss="alert">&times;</button>
-	<a href="#" class="alert-link">成功！很好地完成了提交。</a>
+<p>面板标题</p>
+<div class="panel panel-default">
+	<div class="panel-heading">
+		不带title的面板标题
+	</div>
+	<div class="panel-body">
+		面板内容
+	</div>
 </div>
 
-<div class="alert alert-info">
-	<button class="close" data-dismiss="alert">&times;</button>
-	<a href="#" class="alert-link">信息！请注意这些信息。</a>
+<br>
+
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h2 class="panel-title">带有title的标题
+		</h2>
+	</div>
+	<div class="panel-body">
+		面板内容
+	</div>
+</div>
+
+<br>
+
+<p>面板脚注</p>
+<div class="panel panel-default">
+	<div class="panel-heading">
+		面板标题
+	</div>
+	<div class="panel-body">
+		面板内容
+	</div>
+	<div class="panel-footer">
+		面板脚注
+	</div>
+</div>
+
+<br>
+<p>带有语境色彩的面板</p>
+<div class="panel panel-danger">
+	<div class="panel-heading">
+		标题
+	</div>
+	<div class="panel-body">
+		内容
+	</div>
+	<div class="panel-footer">
+		脚注
+	</div>
+</div>
+
+<br>
+
+<p>带表格的面板</p>
+<div class="panel panel-warning">
+	<div class="panel-heading">标题</div>
+	<div class="panel-body">内容</div>
+	<table class="table">
+		<tr>
+			<th>1</th>
+			<th>2</th>
+			<th>3</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+		</tr>
+	</table>
+	<div class="panel-footer">脚注</div>
+</div>
+
+<br>
+
+<p>带列表组的面板</p>
+<div class="panel panel-primary">
+	<div class="panel-heading">标题</div>
+	<div class="panel-body">内容</div>
+	<ul class="list-group">
+		<li class="list-group-item">1</li>
+		<li class="list-group-item">2</li>
+		<li class="list-group-item">3</li>
+		<li class="list-group-item">4</li>
+	</ul>
+	<div class="panel-footer">脚注</div>
 </div>
 
 <script src="js/jquery.min.js"></script>
